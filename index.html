@@ -3,7 +3,8 @@
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
-  <title>El Tren</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Tren</title> -->
 
 </head>
 <style type="text/css">
@@ -15,23 +16,38 @@
   h1 {
     margin: 10vh 0 0;
     font-size: 60px;
+    z-index: 10;
+  }
+
+  h2 {
+    z-index: 10;
   }
 
 
   h4 {
     margin: 0;
     font-size: 50px;
+    z-index: 10;
   }
 
   #container {
-    width: 100%;
+    width: 100vw;
     height: 700px;
     font-family: 'Rajdhani', sans-serif;
+    color: #faaa0a;
+    z-index: 10;
+  }
+
+  #backImg {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 700px;
     background-image: url("img/treny.png");
     background-size: cover auto;
     background-position: center center;
     background-repeat: no-repeat;
-    color: #faaa0a;
+    z-index: 1;
   }
 
   #top {
@@ -39,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
   }
 
   #bottom {
@@ -47,6 +64,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 10;
   }
 
   #videosWrapper {
@@ -56,39 +74,49 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 10;
   }
 
 
   .vid {
-    background-color: black;
+    /*background-color: black;*/
     height: auto;
     display: flex;
     justify-content: center;
-    width: 90vw;
+    width: auto;
     margin: 48px;
     align-items: center;
     border-radius: 10px;
+    z-index: 10;
   }
 
   .upper {
     text-transform: uppercase;
   }
 
+  #arrow {
+    height: 40px;
+    z-index: 10;
+    margin-bottom: 10px;
+  }
+
+  
+
 </style>
 
 <body>
-
+  <div id="backImg" ></div>
   <div id="container">
 
-    <div id="top">
-      <h1 class="upper">El Tren y la Peninsula</h1>
-    </div>
+      <div id="top">
+        <h1 class="upper">El Tren y la Peninsula</h1>
+      </div>
 
-    <div id="bottom">  
-      <h2 class="upper">Perspectivas alrededor del Tren Maya</h2>
-      <h4>2021</h4>
-    </div>  
-
+      <div id="bottom">  
+        <h2 class="upper">Perspectivas alrededor del Tren Maya</h2>
+        <h4>2021</h4>
+        <img id="arrow" src="img/scrollDown.png" >
+      </div>  
   </div>
 
 </body>
