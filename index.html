@@ -1,27 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
   <title>El Tren</title>
 
 </head>
+<style type="text/css">
+  body {
+    margin: 0;
+    background-color: black;
+  }
+
+  h1 {
+    margin: 10vh 0 0;
+    font-size: 60px;
+  }
+
+
+  h4 {
+    margin: 0;
+    font-size: 50px;
+  }
+
+  #container {
+    width: 100%;
+    height: 700px;
+    font-family: 'Rajdhani', sans-serif;
+    background-image: url("img/treny.png");
+    background-size: cover auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #faaa0a;
+  }
+
+  #top {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #bottom {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #videosWrapper {
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+
+  .vid {
+    background-color: black;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 48px;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .upper {
+    text-transform: uppercase;
+  }
+
+</style>
 
 <body>
 
   <div id="container">
 
     <div id="top">
-      <h1>El Tren y la Peninsula</h1>
+      <h1 class="upper">El Tren y la Peninsula</h1>
     </div>
 
     <div id="bottom">  
-      <h2>Perspectivas alrededor del Tren Maya</h2>
+      <h2 class="upper">Perspectivas alrededor del Tren Maya</h2>
       <h4>2021</h4>
     </div>  
 
   </div>
 
 </body>
+<div id="videosWrapper">
+        <div class=vid>
+          <iframe src="https://player.vimeo.com/video/503827241" width="900" height="352" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class=vid>
+          <iframe src="https://player.vimeo.com/video/503832162" width="900px" height="352" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div> 
+      </div> 
 
 
 </html>
