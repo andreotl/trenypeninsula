@@ -14,18 +14,18 @@ body, html {
   overflow-x: hidden; 
 }
 
-#bgimg-1, #bgimg-2, #bgimg-3, #bgimg-4, #bgimg-5, #bgimg-6, #bgimg-7 {
+.paralax {
   position: relative;
   opacity: 1;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   z-index: 10;
 }
   @media screen and (max-device-width: 500px) {
-	#bgimg-1, #bgimg-2, #bgimg-3, #bgimg-4, #bgimg-5, #bgimg-6, #bgimg-7 {
-		background-attachment: scroll;
+	.parlax {
+		background-attachment: inherit;
 		width:100vw;
 	}
 }
@@ -282,7 +282,7 @@ body, html {
    
      
 
-  <div id="bgimg-1">
+  <div class:"paralax" id="bgimg-1">
       <div id="container">
          <div id="leftside">
             <div class="socialmediaicons" style="line-height: 40px;">
