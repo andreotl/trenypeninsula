@@ -1,24 +1,268 @@
-
-
-<!DOCTYPE html>
 <html>
 <head>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>El Tren</title> -->
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
 <style type="text/css">
-  body {
-    margin: 0;
-    background-color: rgb(164, 218, 196);
-    margin-bottom: 100px;
-    height:100%;
+body, html {
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.paralax1 {
+  position: relative;
+  background-image: url("img/donroberto_trenypeninsula.jpeg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax1 {
+		background-attachment: inherit;
+		background-image: url("img/donroberto_trenypeninsula ligero.jpeg");
+		background-size: cover;
+		background-position:center;
+		height:100%;
+		overflow-y:scroll;
+	}
+}
+	
+.paralax2 {
+  position: relative; 
+  background-image: url("img/estacion abandonada_trenypeninsula.jpg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax2 {
+		background-attachment: inherit;
+		overflow-y:scroll;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+   
+	
+.paralax3 {
+  position: relative;
+  background-image: url("img/gota de agua y la piramide_eltrenylapeninsula.jpg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax3 {
+		background-attachment: inherit;
+		background-image: url("img/gota de agua y la piramide_eltrenylapeninsula ligero.jpeg");
+		background-size: cover;
+		background-position:center;
+		height:100%;
+		overflow-y:scroll;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+	
+.paralax4 {
+ /* position: relative; */
+  background-image: url("img/cortando selva_ trenypeninsula.jpg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax4 {
+		background-attachment: inherit;
+		background-image: url("img/cortando selva_ trenypeninsula ligero.jpeg");
+		background-size: cover;
+		background-position:center;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+	
+.paralax5 {
+ /* position: relative; */
+  background-image: url("img/la selfie_trenypeninsula.jpg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax5 {
+		background-attachment: inherit;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+	
+.paralax6 {
+ /* position: relative; */
+  background-image: url("img/sentir el tiempo_tren y peninsula.jpg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax6 {
+		background-attachment: inherit;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+	
+/* #bgimg-1 {
+  background-image: url("img/donroberto_trenypeninsula.jpeg");
+ min-height: 100%;
+	width:100vw;
+	}
+@media screen and (max-device-width: 500px) {
+	#bgimg-1 {
+     		background-image: url("img/donroberto_trenypeninsula ligero.jpeg");
+		background-attachment: inherit;
+	}
+  } */
+
+
+/* #bgimg-2 {
+  background-image: url("img/estacion abandonada_trenypeninsula.jpg");
+  min-height: 100%;
+} */
+	
+
+/* #bgimg-3 {
+  background-image: url("img/gota de agua y la piramide_eltrenylapeninsula.jpg");
+  min-height: 100%;
+} */
+   
+ /* #bgimg-4 {
+  background-image: url("img/cortando selva_ trenypeninsula.jpg");
+  min-height: 100%;
+}
+	@media only screen and (max-width: 500px) {
+	#bgimg-4 {
+     		background-image: url("img/cortando selva_ trenypeninsula ligero.jpeg");
+		min-height: 100%;
+	}
+  } */
+
+/* #bgimg-5 {
+  background-image: url("img/edificio en la selva_trenypeninsula.jpg");
+  min-height: 100%;
+} */
+
+/* #bgimg-6 {
+  background-image: url("img/la selfie_trenypeninsula.jpg");
+  min-height: 100%;
+} */
+   
+/*  #bgimg-7 {
+  background-image: url("img/sentir el tiempo_tren y peninsula.jpg");
+  min-height: 100%;
+} */
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  z-index:10;
+  text-align:center;
+}
+
+.caption span.border {
+  padding: 18px;
+  font-size: 60px;
+  opacity:1;  
+  letter-spacing: 10px;
+   z-index:10;
+}
+   
+ .socialmediaicons {
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    width: 18px;
+    list-style:none;
+   }
+   
+ .fa-facebook {
+  color:#faaa0a;
+  font-size:25px;
+}
+   
+.fa-envelope {
+  color:#faaa0a;
+  font-size:25px;
+}
+	
+ .fa-instagram {
+  color:#faaa0a;
+  font-size:25px;
+}
+
+ #arrow {
+    height: 40px;
+    z-index: 10;
+    align-items: center;
+    margin: 20px;
+   }
+   
+ #top {
+    box-sizing: border-box;
     width: 100%;
+    height: 45vh;
+    padding: 0px 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
   }
-  
-  .imgWrapper {
+   
+ #typ {
+    width: 60vw;
+    height: auto;
+    z-index: 10;
+    align-items: center;
+  }
+   
+   .imgWrapper {
     position: relative;
     width: 100%;
     min-height: 300px;
@@ -29,21 +273,36 @@
     margin: 11vh 0 0;
     font-size: 70px;
     z-index: 10;
+    color: #bc6255;
   }
 
   h2 {
+    padding-left:6vw;
     z-index: 10;
-    font-size:70px;
+    font-size: 5vw;
   }
+   
+   @media only screen and (max-device-width: 600x) {
+     h2 {
+       font-size: 14px 
+     }
+  } 
   
   h3 {
     z-index: 10;
-    font-size:70px;
+    font-size: 3vw;
     color: #28CDA7;
   }
   h4 {
-    margin: 100px;
-    font-size: 50px;
+     display: flex;
+     align-items:center;
+     justify-content:space-evenly;
+     font-size: 5vw;
+     z-index: 10;
+  }
+   
+     h5 {
+    font-size: 3vw;
     z-index: 10;
   }
 
@@ -56,7 +315,7 @@
     z-index: 11;
   }
 
-  #backImg {
+  /* #backImg {
     position: fixed;
     top: 0;
     width: 100vw;
@@ -64,47 +323,71 @@
     background-image: url("img/donroberto_trenypeninsula.jpeg");
     background-size: cover;
     background-position: center center;
-    z-index: 1;
+    z-index: 11;
   }
-
-  #top {
-    box-sizing: border-box;
-    width: 100%;
-    height: 300px;
-    padding: 0px 10vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-  }
+*/
 
   #bottom {
-    margin: 50px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     z-index: 10;
   }
+  
+  #button {
+    line-height: 50px;
+    width: 18px;
+    font-size: 25pt;
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 0px;
+    margin-right: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+ }
+   
+  #leftside {
+    margin-top: 0px;
+    margin-left: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+ }
+#flechitas {
+    position: relative;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    bottom:10vh;
+ }
 
   #videosWrapper {
+    position: relative !important;
     width: 100%;
     display: flex;
     height: auto;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 10;
+    z-index: 16;
     margin-top: 500px,
   }
 
+   .textContainer {
+     box-sizing: border-box;
+     padding: 4vw;
+   }
 
   .vid {
-    /*background-color: black;*/
+    box-sizing: border-box;
+    padding: 0 5vw;
     height: auto;
     display: flex;
     justify-content: center;
-    width: auto;
+    width: 100%;
     margin: 48px;
     align-items: center;
     border-radius: 10px;
@@ -115,45 +398,103 @@
     text-transform: uppercase;
   }
 
-  #arrow {
-    height: 40px;
-    z-index: 10;
-    align-items: center;
-    margin: 50px;
-    color: #faaa0a;
-  }
-  
-
+/* Turn off parallax scrolling for tablets and phones 
+ @media only screen and (max-device-width: 1024px) {
+     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+         background-attachment: scroll;
+     }
+  } */
+   
 </style>
-
+</head>
 <body>
-  <div class="imgWrapper">
-    <div id="backImg" ></div>
-  </div>
-  <div id="container">
+   
+     
 
-      <div id="top">
-        <h1 class="upper">El Tren y la Peninsula</h1>
+  <div class="paralax1">
+      <div id="container">
+         <div id="leftside">
+            <div class="socialmediaicons" style="line-height: 40px;">
+               <li>
+                  <a href="https://www.facebook.com/eltrenylapeninsuladoc" target="_blank"><i class="fa fa-facebook"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/eltrenylapeninsula" target="_blank"><i class="fa fa-instagram"></i></a>
+               </li>
+		    <li>
+                  <a href="mailto:eltrenylapeninsuladoc@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+               </li>
+            </div>
+         </div>
+     <div id="button">
+         <a href="index.html">ESP</a>
+     </div>
+     <div id="top">
+         <img id="typ" src="img/typ.png">
+        <!-- <h1 class="upper">El Tren y la Peninsula</h1> -->
       </div>
-    <div id="bottom">
-       <img id="arrow" src="img/scrollDown.png" >      
+        
+      <div id="top">  
+        <h5>perspectivas de la península alrededor del "Tren Maya"</h5>
       </div>
-    <div id="videosWrapper">
+        
+    <div id="flechitas">
+       <img id="arrow" src="img/flechas.png" >      
+     </div>
+        
+    <div id="videosWrapper" style="padding-top: 10%;">
         <div class=vid>
-          <iframe src="https://player.vimeo.com/video/789575007?h=4d9c005dd5" width="640" height="272" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>        </div>
+          <iframe loading="lazy" src="https://player.vimeo.com/video/789575007?h=4d9c005dd5" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>        </div>
       </div> 
-    <div id="bottom">
+    <div class="textContainer">
       <h4>2023</h4>
-    <h2 class="upper">El Tren y la Península is a deep dive into Mexico's Yucatan Peninsula as the 1500 km railroad megaproject is being built. <br>A cinematic journey along the projected route of the train takes us on a thrilling ride across the Peninsula. <br>Through the fascinating stories and reflections of its inhabitants, the documentary unravels the environmental and social consequences of the development model imposed on the region as the train approaches its inauguration.
-                      <br>The incisive and transparent testimonies of the inhabitants of the Peninsula weave together a collective story and reveal a human landscape full of vitality and wisdom that exposes the clash between different ways of imagining progress. <br>An urgent film that unveils the worlds hidden behind the tourist paradise that everyone knows, delving into the ideological and territorial battles that unfold in the ancestral land of the Maya.</h2>
-      <h3 class="upper"> The Yucatan Peninsula is a unique region in the world that has seen enormous transformations through time; starting with the Chicxulub meteorite impact that caused the extinction of the dinosaurs; the flourishing of the Maya culture; colonization; the atrocities of the hacienda times; the caste war or the founding of the city of Cancún: the Yucatan Peninsula has been the center of monumental events that have transformed it time and time again. <br>Its inhabitants, heirs of a rich Maya legacy, have remained in these lands navigating the challenges that have been presented to them throughout history. With the announcement of the arrival of the so-called "Maya Train" a new event of profound impact is on the horizon.<br>
-                         The peninsula is a beautiful region. <br>Its economic growth in recent decades has centered on its natural and cultural wealth, making it one of the most popular tourist destinations in the world. <br>While people from far and wide visit the region to enjoy and experience "paradise," the economic forces behind this enormous global interest have been transforming life on the peninsula and its surroundings at a dizzying pace. <br>The tourist industry has consequently established an elitist social order, while at the same time fostering massive environmental depredation and a spiral of violence generated by drug traffickers struggling to supply drugs to the insatiable appetite of tourists.<br>
-                         In the midst of the pandemic, when the world seemed to stop, the construction of the "Maya Train", the most ambitious project of President Andrés Manuel López Obrador, began. <br>It was presented as a project that will boost the region's economy and bring social well-being to the population through the creation of a railway circuit connecting the main cities and tourist destinations. <br>The "Maya Train" project intends to carry out a profound territorial reorganization and channel definitively the development of the region. While the most appropriate development model for the peninsula and its inhabitants is being debated, the advance of the train generates great concerns about the environmental and social consequences it will entail. 
-                         <br>Taking into account the complex history of dispossession, exploitation and destruction of the peninsula, it is important to unravel the challenges and dangers, as well as the promises and proposals that the train carries in order to avoid reproducing the destructive inequalities that the peninsula has dragged for centuries.</h3>
+      <h2 class="upper">
+	    El Tren y la Península is a deep dive into Mexico's Yucatan Peninsula as the 1500 km railroad megaproject is being built. <br>A cinematic journey along the projected route of the train takes us on a thrilling ride across the Peninsula. <br>Through the fascinating stories and reflections of its inhabitants, the documentary unravels the environmental and social consequences of the development model imposed on the region as the train approaches its inauguration.
+                      <br>The incisive and transparent testimonies of the inhabitants of the Peninsula weave together a collective story and reveal a human landscape full of vitality and wisdom that exposes the clash between different ways of imagining progress. <br>An urgent film that unveils the worlds hidden behind the tourist paradise that everyone knows, delving into the ideological and territorial battles that unfold in the ancestral land of the Maya.
+      </h2> 
+       <!-- <h3 class="upper">
+          La Península de Yucatán es una región única en el mundo que ha visto enormes transformaciones a través del tiempo; comenzando por el impacto del meteorito Chicxulub que causó la extinción de los dinosaurios; el florecimiento de la cultura maya; la colonización; las atrocidades de la época de las haciendas; la guerra de castas o la fundación de la ciudad de Cancún: la Península de Yucatán ha sido el centro de eventos monumentales que la han transformado una y otra vez. <br>Sus habitantes, herederos de un rico legado maya, han permanecido en estas tierras navegando los retos que se les han presentado a lo largo de la historia. <br>Con el anuncio de la llegada del llamado "Tren Maya” se avecina un nuevo acontecimiento de impacto profundo.
+         <br>La península es una región hermosa. Su crecimiento económico en las últimas décadas se ha centrado en su riqueza natural y cultural, convirtiéndola en uno de los destinos turísticos más populares del mundo. <br>Mientras turistas de todas partes visitan la región para disfrutar y experimentar el "paraíso", las fuerzas económicas detrás de este enorme interés mundial han ido transformando la vida en la península y su entorno a un ritmo vertiginoso. <br>La industria turística ha establecido como consecuencia un orden social elitista, a la vez que ha propiciado una depredación masiva del medio ambiente y un espiral de violencia generado por el narcotráfico, que lucha por suministrar drogas al apetito insaciable de los turistas.
+         <br>En plena pandemia, cuando el mundo parecía detenerse, inicia la construcción del “Tren Maya”. <br>Se presentó como un proyecto que impulsará la economía de la región y traerá bienestar social a la población mediante la creación de un circuito ferroviario de 1500km que conecte las principales ciudades y destinos turísticos. <br>El proyecto del “Tren Maya” pretende llevar a cabo una profunda reorganización territorial y encauzar definitivamente el desarrollo de la región. <br>Mientras se debate cuál es el modelo de desarrollo más adecuado para la península y sus habitantes, el avance del tren genera grandes preocupaciones por las consecuencias ambientales y sociales que carga. 
+         Teniendo en cuenta la compleja historia de despojo, explotación y destrucción de la península, es importante desentrañar los retos y peligros, así como las promesas y propuestas que lleva el tren para no reproducir las destructivas desigualdades que arrastra la península desde hace siglos.
+       </h3> -->
       <h4>eltrenylapeninsuladoc@gmail.com</h4>
-      </div>
+   </div>
   </div>
 
-</body>
+<!-- <div class="paralax1">
+     </div> -->
+  
+<div class="paralax2">
+</div>
+     
+<!-- <div class="paralax2">
+</div> -->
+     
+<div class="paralax3">
+</div>
+     
+<!-- <div id="bgimg-3">
+</div> -->
+     
+<div class="paralax4">
+ </div>
+     
+<!-- <div id="bgimg-4">
+ </div> -->
+     
+<div class="paralax5">
+ </div>
 
+<!-- <div id="bgimg-6">
+ </div> -->  
+     
+<div class="paralax6">
+</div>
+      
+<!-- <div id="bgimg-7">
+</div> -->
+     </div>
+</body>
+   
 </html>
