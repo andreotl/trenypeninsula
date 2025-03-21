@@ -1,23 +1,109 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" href="/img/scrollDown.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>El Tren</title> -->
+   <link rel="icon" href="img/uno.png">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
 <style type="text/css">
-  body {
-    margin: 0;
-    background-color: rgb(164, 218, 196);
-    margin-bottom: 100px;
-    height:100%;
+body, html {
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.paralax1 {
+  position: relative;
+  background-image: url("img/donroberto_trenypeninsula.jpeg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax1 {
+		background-attachment: inherit;
+		background-image: url("img/donroberto_trenypeninsula ligero.jpeg");
+		background-size: cover;
+		background-position:center;
+		height:100%;
+		overflow-y:scroll;
+	}
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  z-index:10;
+  text-align:center;
+}
+
+.caption span.border {
+  padding: 18px;
+  font-size: 60px;
+  opacity:1;  
+  letter-spacing: 10px;
+   z-index:10;
+}
+   
+ .socialmediaicons {
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    width: 18px;
+    list-style:none;
+   }
+   
+ .fa-facebook {
+  color:#faaa0a;
+  font-size:25px;
+}
+   
+.fa-envelope-o {
+  color:#faaa0a;
+  font-size:25px;
+}
+	
+ .fa-instagram {
+  color:#faaa0a;
+  font-size:25px;
+}
+
+ #arrow {
+    height: 40px;
+    z-index: 10;
+    align-items: center;
+    margin: 20px;
+   }
+   
+ #top {
+    box-sizing: border-box;
     width: 100%;
+    height: 45vh;
+    padding: 0px 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
   }
-  
-  .imgWrapper {
+   
+ #typ {
+    width: 60vw;
+    height: auto;
+    z-index: 10;
+    align-items: center;
+  }
+   
+   .imgWrapper {
     position: relative;
     width: 100%;
     min-height: 300px;
@@ -28,23 +114,47 @@
     margin: 11vh 0 0;
     font-size: 70px;
     z-index: 10;
-    color: #FFAB91;
+    color: #bc6255;
   }
 
   h2 {
     z-index: 10;
-    font-size:60px;
+    font-size: 5.5vw;
+    color:#ff8c00;
   }
+   
+   @media only screen and (max-device-width: 600px) {
+     h2 {
+       font-size: 7vw; 
+       padding-left:6vw;
+     }
+  } 
   
   h3 {
     z-index: 10;
-    font-size:60px;
-    color: #28CDA7;
+    font-size: 4vw;
+    color: #fe5858;
   }
+	 @media screen and (max-device-width: 600px) {
+     h3 {
+       font-size: 6.7vw;
+	padding-left:6vw;
+     }
+  } 
+	
   h4 {
-    margin: 100px;
-    font-size: 50px;
+     display: flex;
+     align-items:center;
+     justify-content:space-evenly;
+     font-size: 6vw;
+     z-index: 10;
+     color:#ff8c00;
+  }
+   
+     h5 {
+    font-size: 2.5vw;
     z-index: 10;
+    text-align:center;
   }
 
   #container {
@@ -56,7 +166,7 @@
     z-index: 11;
   }
 
-  #backImg {
+  /* #backImg {
     position: fixed;
     top: 0;
     width: 100vw;
@@ -64,22 +174,12 @@
     background-image: url("img/donroberto_trenypeninsula.jpeg");
     background-size: cover;
     background-position: center center;
-    z-index: 1;
+    z-index: 11;
   }
-
-  #top {
-    box-sizing: border-box;
-    width: 100%;
-    height: 300px;
-    padding: 0px 10vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-  }
+*/
 
   #bottom {
-    margin: 50px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,36 +190,52 @@
   #button {
     line-height: 50px;
     width: 18px;
-    font-size: 25pt;
+    font-size: 20pt;
     font-family: 'Rajdhani', sans-serif;
     margin-top: 0px;
-    margin-right: 50px;
+    margin-right: 35px;
     position: fixed;
     top: 0;
     right: 0;
  }
+   
+  #leftside {
+    margin-top: 0px;
+    margin-left: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+ }
+#flechitas {
+    position: relative;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    bottom:10vh;
+ }
 
   #videosWrapper {
-    width: 100%;
-    height: 100vh; /* Takes the full screen height */
+    position: absolute; /* Absolute to fill the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering */
+    width: 80vw; /* Adjust the width relative to screen */
+    height: auto; /* Let it scale */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centers content vertically */
-    z-index: 10;
+    justify-content: center;
+    z-index: 16;
 }
 
 .vid {
     position: relative;
-    width: 60vw; /* Adjust width */
-    max-width: 900px; /* Set a max size */
-    aspect-ratio: 16 / 9; /* Keeps the aspect ratio */
+    width: 80vw; /* Adjusted width for better scaling */
+    max-width: 1200px; /* Limit max size */
+    aspect-ratio: 16 / 9; /* Ensures correct proportions */
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 10;
+    justify-content: center;
 }
 
 .vid iframe {
@@ -128,39 +244,92 @@
     border-radius: 10px;
 }
 
+   .textContainer {
+     box-sizing: border-box;
+     padding: 4vw;
+   }
+
   .upper {
     text-transform: uppercase;
   }
 
-  #arrow {
-    height: 40px;
-    z-index: 10;
-    align-items: center;
-    margin: 50px;
-    color: #faaa0a;
-  }
-  
-
+/* Turn off parallax scrolling for tablets and phones 
+ @media only screen and (max-device-width: 1024px) {
+     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+         background-attachment: scroll;
+     }
+  } */
+   
 </style>
-
+</head>
 <body>
-  <div class="imgWrapper">
-    <div id="backImg" ></div>
-  </div>
-  <div id="container">
-  <div id="button">
+   
+     
+
+  <div class="paralax1">
+      <div id="container">
+         <div id="leftside">
+            <div class="socialmediaicons" style="line-height: 40px;">
+              <li>  
+			  <form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="business" value="7BXVGQFA8KQTC" />
+<input type="hidden" name="no_recurring" value="0" />
+<input type="hidden" name="item_name" value="Esto ha sido un esfuerzo independiente y autogestivo. Todo el dinero va a la continuación de la distribución de la película." />
+<input type="hidden" name="currency_code" value="MXN" />
+<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donar con el botón PayPal" />
+<img alt="" border="0" src="https://www.paypal.com/es_MX/i/scr/pixel.gif" width="1" height="1" />
+</form>
+			  </li>
+		    <li>
+                  <a href="https://www.facebook.com/eltrenylapeninsuladoc" target="_blank"><i class="fa fa-facebook"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/eltrenylapeninsula" target="_blank"><i class="fa fa-instagram"></i></a>
+               </li>
+		    <li>
+                  <a href="mailto:eltrenylapeninsuladoc@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+               </li>
+		  
+            </div>
+         </div>
+     <div id="button">
     <a href="https://www.eltrenylapeninsula.com/docu">
     <img src="img/toh.png" alt="Click to Visit" style="position: fixed; top: 0; right: 0; width: 100px; height: auto;">
     </div>
-    <div id="videosWrapper">
+        
+     
+        
+  <div id="videosWrapper">
         <div class=vid>
-          <iframe src="https://player.vimeo.com/video/1044484686?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="El Tren y la Península - Documental"></iframe>
+          <iframe loading="lazy" src="https://player.vimeo.com/video/1044484686?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" allowfullscreen=""></iframe>
       </div> 
-    <div id="bottom">
-   
-      </div>
+
   </div>
+  
+<div class="paralax2">
+</div>
+     
+     
+<div class="paralax3">
+</div>
+     
+<div class="paralax4">
+ </div>
+	  
+     <div class="paralax7">
+</div>
 
+	<div class="paralax8">
+</div>
+
+     
+<div class="paralax5">
+ </div>
+    
+<div class="paralax6">
+</div>
+      
+     </div>
 </body>
-
+   
 </html>
