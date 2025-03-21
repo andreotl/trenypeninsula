@@ -216,34 +216,38 @@ body, html {
  }
 
   #videosWrapper {
-    position: relative !important;
-    width: 100%;
+    position: absolute; /* Absolute to fill the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering */
+    width: 80vw; /* Adjust the width relative to screen */
+    height: auto; /* Let it scale */
     display: flex;
-    height: auto;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     z-index: 16;
-    margin-top: 500px,
-  }
+}
+
+.vid {
+    position: relative;
+    width: 80vw; /* Adjusted width for better scaling */
+    max-width: 1200px; /* Limit max size */
+    aspect-ratio: 16 / 9; /* Ensures correct proportions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vid iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 
    .textContainer {
      box-sizing: border-box;
      padding: 4vw;
    }
-
-  .vid {
-    box-sizing: border-box;
-    padding: 0 5vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 48px;
-    align-items: center;
-    border-radius: 10px;
-    z-index: 10;
-  }
 
   .upper {
     text-transform: uppercase;
