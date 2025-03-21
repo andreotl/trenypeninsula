@@ -1,0 +1,505 @@
+<html>
+<head>
+   <link rel="icon" href="img/uno.png">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+body, html {
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.paralax1 {
+  position: relative;
+  background-image: url("img/donroberto_trenypeninsula.jpeg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax1 {
+		background-attachment: inherit;
+		background-image: url("img/donroberto_trenypeninsula ligero.jpeg");
+		background-size: cover;
+		background-position:center;
+		height:100%;
+		overflow-y:scroll;
+	}
+}
+	
+.paralax2 {
+  position: relative; 
+  background-image: url("img/estacion abandonada_trenypeninsula.jpg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax2 {
+		background-attachment: inherit;
+		overflow-y:scroll;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+   
+	
+.paralax3 {
+  position: relative;
+  background-image: url("img/gota de agua y la piramide_eltrenylapeninsula.jpg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax3 {
+		background-attachment: inherit;
+		background-image: url("img/gota de agua y la piramide_eltrenylapeninsula ligero.jpeg");
+		background-size: cover;
+		background-position:center;
+		height:100%;
+		overflow-y:scroll;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+	
+.paralax4 {
+ /* position: relative; */
+  background-image: url("img/cortando selva_ trenypeninsula.jpg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax4 {
+		background-attachment: inherit;
+		background-image: url("img/cortando selva_ trenypeninsula ligero.jpeg");
+		background-size: cover;
+		background-position:center;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+	
+.paralax5 {
+ /* position: relative; */
+  background-image: url("img/la selfie_trenypeninsula.jpg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax5 {
+		background-attachment: inherit;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+	
+.paralax6 {
+ /* position: relative; */
+  background-image: url("img/sentir el tiempo_tren y peninsula.jpg");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax6 {
+		background-attachment: inherit;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+	
+	.paralax7 {
+ /* position: relative; */
+  background-image: url("img/hamaca.png");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax7 {
+		background-attachment: inherit;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+	
+	.paralax8 {
+ /* position: relative; */
+  background-image: url("img/baltazar.png");
+  height:100%;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 10;
+}
+  @media screen and (max-device-width: 500px) {
+	.paralax8 {
+		background-attachment: inherit;
+		position: sticky;
+		top:0px;
+		left:0px;
+	}
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  z-index:10;
+  text-align:center;
+}
+
+.caption span.border {
+  padding: 18px;
+  font-size: 60px;
+  opacity:1;  
+  letter-spacing: 10px;
+   z-index:10;
+}
+   
+ .socialmediaicons {
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    width: 18px;
+    list-style:none;
+   }
+   
+ .fa-facebook {
+  color:#faaa0a;
+  font-size:25px;
+}
+   
+.fa-envelope-o {
+  color:#faaa0a;
+  font-size:25px;
+}
+	
+ .fa-instagram {
+  color:#faaa0a;
+  font-size:25px;
+}
+
+ #arrow {
+    height: 40px;
+    z-index: 10;
+    align-items: center;
+    margin: 20px;
+   }
+   
+ #top {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45vh;
+    padding: 0px 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+   
+ #typ {
+    width: 60vw;
+    height: auto;
+    z-index: 10;
+    align-items: center;
+  }
+   
+   .imgWrapper {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    z-index: 1;
+  }
+
+  h1 {
+    margin: 11vh 0 0;
+    font-size: 70px;
+    z-index: 10;
+    color: #bc6255;
+  }
+
+  h2 {
+    z-index: 10;
+    font-size: 5.5vw;
+    color:#ff8c00;
+  }
+   
+   @media only screen and (max-device-width: 600px) {
+     h2 {
+       font-size: 7vw; 
+       padding-left:6vw;
+     }
+  } 
+  
+  h3 {
+    z-index: 10;
+    font-size: 4vw;
+    color: #fe5858;
+  }
+	 @media screen and (max-device-width: 600px) {
+     h3 {
+       font-size: 6.7vw;
+	padding-left:6vw;
+     }
+  } 
+	
+  h4 {
+     display: flex;
+     align-items:center;
+     justify-content:space-evenly;
+     font-size: 6vw;
+     z-index: 10;
+     color:#ff8c00;
+  }
+   
+     h5 {
+    font-size: 2.5vw;
+    z-index: 10;
+    text-align:center;
+  }
+
+  #container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Rajdhani', sans-serif;
+    color: #faaa0a;
+    z-index: 11;
+  }
+
+  /* #backImg {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-image: url("img/donroberto_trenypeninsula.jpeg");
+    background-size: cover;
+    background-position: center center;
+    z-index: 11;
+  }
+*/
+
+  #bottom {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+  }
+  
+  #button {
+    line-height: 50px;
+    width: 18px;
+    font-size: 20pt;
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 0px;
+    margin-right: 35px;
+    position: fixed;
+    top: 0;
+    right: 0;
+ }
+   
+  #leftside {
+    margin-top: 0px;
+    margin-left: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+ }
+#flechitas {
+    position: relative;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    bottom:10vh;
+ }
+
+  #videosWrapper {
+    position: relative !important;
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 16;
+    margin-top: 500px,
+  }
+
+   .textContainer {
+     box-sizing: border-box;
+     padding: 4vw;
+   }
+
+  .vid {
+    box-sizing: border-box;
+    padding: 0 5vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 48px;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .upper {
+    text-transform: uppercase;
+  }
+
+/* Turn off parallax scrolling for tablets and phones 
+ @media only screen and (max-device-width: 1024px) {
+     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+         background-attachment: scroll;
+     }
+  } */
+   
+</style>
+</head>
+<body>
+   
+     
+
+  <div class="paralax1">
+      <div id="container">
+         <div id="leftside">
+            <div class="socialmediaicons" style="line-height: 40px;">
+              <li>  
+			  <form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="business" value="7BXVGQFA8KQTC" />
+<input type="hidden" name="no_recurring" value="0" />
+<input type="hidden" name="item_name" value="Esto ha sido un esfuerzo independiente y autogestivo. Todo el dinero va a la continuación de la distribución de la película." />
+<input type="hidden" name="currency_code" value="MXN" />
+<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donar con el botón PayPal" />
+<img alt="" border="0" src="https://www.paypal.com/es_MX/i/scr/pixel.gif" width="1" height="1" />
+</form>
+			  </li>
+		    <li>
+                  <a href="https://www.facebook.com/eltrenylapeninsuladoc" target="_blank"><i class="fa fa-facebook"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/eltrenylapeninsula" target="_blank"><i class="fa fa-instagram"></i></a>
+               </li>
+		    <li>
+                  <a href="mailto:eltrenylapeninsuladoc@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+               </li>
+		  
+            </div>
+         </div>
+     <div id="button">
+         <a href="english.html">ENG</a>
+     </div>
+     <div id="top">
+         <img id="typ" src="img/typ.png">
+        <!-- <h1 class="upper">El Tren y la Peninsula</h1> -->
+      </div>
+        
+      <div id="top">  
+        <h5 class="upper">perspectivas de la península alrededor del "Tren Maya"</h5>
+      </div>
+        
+    <div id="flechitas">
+       <img id="arrow" src="img/flechas.png" >      
+     </div>
+        
+    <div id="videosWrapper" style="padding-top: 10%;">
+        <div class=vid>
+          <iframe loading="lazy" src="https://player.vimeo.com/video/789575007?h=4d9c005dd5" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>        </div>
+      </div> 
+    <div class="textContainer" style="padding-top:10%;">
+      <h2 "padding-top:10%;">
+Un recorrido por la península de Yucatán a través de las voces de sus habitantes, mientras la polémica construcción del megaproyecto "Tren Maya" se abre paso por el corazón del territorio maya.
+	    </h2> 
+       <h3 style="padding-top:18%;">
+EL TREN Y LA PENINSULA es un retrato de la península de Yucatán mientras se construye el megaproyecto ferroviario de 1500 km llamado “Tren Maya”. <br><br> Un viaje cinematográfico a lo largo de la ruta proyectada del tren que nos lleva en un recorrido inmersivo a lo largo y ancho de la península. <br> A través de las historias y reflexiones de sus habitantes, el documental expone las transformaciones al paisaje y la cultura ocasionadas por el modelo de desarrollo impuesto en la región. Los testimonios incisivos y transparentes entretejen una narración colectiva que revela un caleidoscopio humano lleno de sabiduría y vitalidad, y expone el choque entre diferentes formas de imaginar el progreso. <br><br> Un documental que muestra los mundos que se esconden detrás del paraíso turístico que todos conocen y nos adentra en las luchas ideológicas y territoriales que se libran en la tierra ancestral de los mayas.
+       </h3>
+      <h4>2023</h4>
+	    
+      <h5>Género: Documental<br>
+	      Año: 2023<br>
+	      Duración: 88 min<br>
+	      Idioma: Español, Inglés, Maya<br>
+	      Productoras: Dos Tohs, Mutual Aid Media
+	    </h5>
+   </div>
+  </div>
+  
+<div class="paralax2">
+</div>
+     
+     
+<div class="paralax3">
+</div>
+     
+<div class="paralax4">
+ </div>
+	  
+     <div class="paralax7">
+</div>
+
+	<div class="paralax8">
+</div>
+
+     
+<div class="paralax5">
+ </div>
+    
+<div class="paralax6">
+</div>
+      
+     </div>
+</body>
+   
+</html>
