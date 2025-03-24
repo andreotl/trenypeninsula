@@ -271,7 +271,20 @@ body, html {
          <div id="leftside">
             <div class="socialmediaicons" style="line-height: 40px;">
               <li>  
-			  <form action="https://www.paypal.com/donate" method="post" target="_top">
+
+<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+<script>
+PayPal.Donation.Button({
+env:'production',
+hosted_button_id:'YLNJW434A68KL',
+image: {
+src:'https://www.paypalobjects.com/es_XC/i/btn/btn_donate_SM.gif',
+alt:'Donar con el botón PayPal',
+title:'PayPal - The safer, easier way to pay online!',
+}
+}).render('#donate-button');
+</script>
+		      <form action="https://www.paypal.com/donate" method="post" target="_top">
 <input type="hidden" name="business" value="7BXVGQFA8KQTC" />
 <input type="hidden" name="no_recurring" value="0" />
 <input type="hidden" name="item_name" value="Esto ha sido un esfuerzo independiente y autogestivo. Todo el dinero va a la continuación de la distribución de la película." />
