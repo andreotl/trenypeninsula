@@ -271,7 +271,8 @@ body, html {
          <div id="leftside">
             <div class="socialmediaicons" style="line-height: 40px;">
               <li>  
-
+		      <div id="donate-button-container">
+<div id="donate-button"></div>
 <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
 <script>
 PayPal.Donation.Button({
@@ -284,6 +285,7 @@ title:'PayPal - The safer, easier way to pay online!',
 }
 }).render('#donate-button');
 </script>
+</div>
 		      <form action="https://www.paypal.com/donate" method="post" target="_top">
 <input type="hidden" name="business" value="7BXVGQFA8KQTC" />
 <input type="hidden" name="no_recurring" value="0" />
